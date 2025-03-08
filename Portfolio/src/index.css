@@ -1,1 +1,9 @@
+@import "tailwindcss";
 
+
+@layer base{
+
+    p{
+        @apply text-black
+    }
+}
