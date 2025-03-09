@@ -1,4 +1,4 @@
-import './css/Header/extraSmallDevice.css'
+import './css/Header.css'
 
 function Header()
 {
