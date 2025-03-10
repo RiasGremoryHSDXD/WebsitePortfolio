@@ -3,9 +3,9 @@ import profile_pic from '../assets/Profile.png'
 
 function Profile(){
     return(
-    <>
-        <img className='rounded-full bg-white border-black border-2 w-32 h-32 object-cover' src={profile_pic} alt="profile_pic"/>
-    </>
+        <div className='lg:justify-start flex justify-center items-center'>
+            <img className='2xl:w-[30vw] rounded-full img-design' src={profile_pic} alt="profile_pic"/>
+        </div>
     )
 }
 

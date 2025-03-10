@@ -1,0 +1,14 @@
+/* This file for the minimum witdh of 640*/
+@import "tailwindcss";
+
+
+@theme{
+    --color-defaultColor: #FFFFFF;
+    --font-defaultFont: Inclusive Sans;
+}
+
+@layer components{
+    .img-design {
+        @apply bg-[#80CED7] border-black border-2 object-cover;
+    }
+}

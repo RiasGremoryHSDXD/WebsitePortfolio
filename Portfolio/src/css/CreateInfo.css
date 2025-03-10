@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-defaultColor: #FFFFFF;
+  --font-defaultFont: Inclusive Sans;
+}
+
+@layer components {
+  .text-design {
+    @apply font-extrabold tracking-wider;
+  }
+
+  /* Typing animation for headings (single line) */
+  .typing-container {
+    @apply w-full overflow-hidden whitespace-nowrap border-r-4 border-black;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  /* Typing animation for paragraphs (multi-line) */
+  .info-reveal {
+    @apply overflow-hidden whitespace-normal;
+    max-height: 0;
+    animation: typing-multiline 4s forwards
+  }
+
+    /* Small screen (430px) specific styling */
+    @media (max-width: 430px) {
+        h2.text-design {
+            @apply text-sm; /* Smaller heading for small screens */
+        }
+        
+        h4.text-design {
+            @apply text-sm; /* Smaller subheading for small screens */
+        }
+        
+        .info-reveal {
+            font-size: 0.875rem; /* Smaller paragraph text (14px) for small screens */
+            line-height: 1.25rem;
+        }
+    }
+
+    /*For the screen with 360px*/
+    @media (max-width: 360px) {
+        h2.text-design {
+            @apply text-xs; /* Smaller heading for small screens */
+        }
+        
+        h4.text-design {
+            @apply text-xs; /* Smaller subheading for small screens */
+        }
+        
+        .info-reveal {
+            font-size: 0.850rem; /* Smaller paragraph text (14px) for small screens */
+            line-height: 1.25rem;
+        }
+    }
+
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes typing-multiline {
+    from { max-height: 0; }
+    to { max-height: 300px; }
+  }
+  
+  @keyframes blink-caret {
+    50% { border-color: transparent; }
+  }
+  
+  .button-design {
+    @apply w-[10vw] h-[10vh] cursor-pointer;
+  }
+  
+  .button-design:hover {
+    @apply bg-green-400;
+  }
+}
