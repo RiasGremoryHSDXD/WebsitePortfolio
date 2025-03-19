@@ -1,6 +1,6 @@
-import '../css/CreateInfo.css'
-import left_arrow from '../assets/left-arrow.png'
-import right_arrow from '../assets/right-arrow.png'
+import '../../css/CreateInfo.css'
+import left_arrow from '../../assets/left-arrow.png'
+import right_arrow from '../../assets/right-arrow.png'
 import { useState } from 'react'
 
 
@@ -66,7 +66,7 @@ function CreateInfo()
                     {stored_title[count]}
             </div>
         </div>
-        <p className='info-reveal'>
+        <p className='info-reveal' key={count}>
             {stored_info[count]}
         </p>
 
