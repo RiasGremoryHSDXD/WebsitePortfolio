@@ -13,18 +13,52 @@ import react_img from './../../assets/React-Dark.png'
 function SkillAndTools(){
     return(
         <div className="flex justify-center bg-white font-[Inclusive_Sans] flex-wrap">
-            <div className='flex'>
-                <p>Skill&Tools</p>
-                <div>
-                    <img className='hexagon' src={idea_dark} alt="IDEA"/>
-                    <img className='hexagon' src={java_dark} alt="programming language"/>
-                    <img className='hexagon' src={javascript} alt="programming language"/>
-                    <img className='hexagon' src={mysql_dark} alt="database" />
-                    <img className='hexagon' src={php_dark} alt="programming language" />
-                    <img className='hexagon' src={php_my_admin_logo} alt="database" />
-                    <img className='hexagon' src={pycharm_dark} alt="IDEA" />
-                    <img className='hexagon' src={python} alt="programming language" />
-                    <img className='hexagon'  src={react_img} alt="framework" />
+            <div className='flex flex-col justify-center items-center space-y-7'>
+                <p className='2xl:text-5xl xl:text-4xl lg:text-2xl md:lg font-defaultFont'>Skill&Tools</p>
+                <div className='skill_and_tools_img'>
+                    <div className='img_container relative'>
+                        <img src={idea_dark} alt="IDEA"/>
+                        <div className="2xl:text-4xl xl:text-3xl lg:text-xl md:text-lg text-[10px] box font-extrabold text-blue-700">Intelliji</div>
+                    </div>
+                    <div className='img_container relative'>
+                        <img src={java_dark} alt="programming language"/>
+                        <div className="2xl:text-4xl xl:text-3xl lg:text-xl md:text-lg text-[10px] box font-extrabold text-blue-700">Java</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={javascript} alt="programming language"/>
+                        <div className="2xl:text-4xl xl:text-3xl lg:text-xl md:text-lg text-[10px] box font-extrabold text-blue-700">JavaScript</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={mysql_dark} alt="database" />
+                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">MySQL <br/> WorkBench</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={php_dark} alt="programming language" />
+                        <div className="2xl:text-2xl box font-extrabold text-blue-700">PHP</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={php_my_admin_logo} alt="database" />
+                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs text-[5px]  box font-extrabold text-blue-700">PhpMyAdmin</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={pycharm_dark} alt="IDEA" />
+                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">PyCharm</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={python} alt="programming language" />
+                        <div className="2xl:text-2xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">Python</div>
+                    </div>
+
+                    <div className='img_container relative'>
+                        <img src={react_img} alt="framework" />
+                        <div className="2xl:text-2xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">Reactjs</div>
+                    </div>
                 </div>
             </div>
         </div>
