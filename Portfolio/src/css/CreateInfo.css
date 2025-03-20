@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-defaultColor: #FFFFFF;
-  --font-defaultFont: Inclusive Sans;
+  --font-defaultFont: 'Inclusive Sans', sans-serif;
 }
 
 @layer components {
