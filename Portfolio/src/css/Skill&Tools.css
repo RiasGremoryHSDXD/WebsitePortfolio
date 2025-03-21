@@ -11,8 +11,8 @@
         @apply flex flex-row space-x-2 flex-wrap  relative justify-center space-y-7
     }
 
-    .img_container{
-        @apply w-[15%] h-[45%]
+    .img_container {
+        @apply 2xl:w-[15%] 2xl:h-[45%] w-[100px] h-[80px];
     }
 
     .skill_and_tools_img img { 

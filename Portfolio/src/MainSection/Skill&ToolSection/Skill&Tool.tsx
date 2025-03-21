@@ -12,8 +12,8 @@ import react_img from './../../assets/React-Dark.png'
 
 function SkillAndTools(){
     return(
-        <div className="2xl:h-[100vh] flex justify-center font-[Inclusive_Sans] flex-wrap">
-            <div className='flex flex-col justify-center items-center space-y-7'>
+        <div id="Skill&Tools" className="flex justify-center font-[Inclusive_Sans]">
+            <div className='flex flex-col justify-center items-center space-y-7 '>
                 <p className='2xl:text-5xl xl:text-4xl lg:text-2xl md:lg font-defaultFont'>Skill&Tools</p>
                 <div className='skill_and_tools_img'>
                     <div className='img_container relative'>
@@ -30,9 +30,9 @@ function SkillAndTools(){
                         <div className="2xl:text-4xl xl:text-3xl lg:text-xl md:text-lg text-[10px] box font-extrabold text-blue-700">JavaScript</div>
                     </div>
 
-                    <div className='img_container relative'>
+                    <div className='img_container  relative'>
                         <img src={mysql_dark} alt="database" />
-                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">MySQL <br/> WorkBench</div>
+                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs box font-extrabold text-blue-700">MySQL <br/> WorkBench</div>
                     </div>
 
                     <div className='img_container relative'>
@@ -42,22 +42,22 @@ function SkillAndTools(){
 
                     <div className='img_container relative'>
                         <img src={php_my_admin_logo} alt="database" />
-                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs text-[5px]  box font-extrabold text-blue-700">PhpMyAdmin</div>
+                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs box font-extrabold text-blue-700">PhpMyAdmin</div>
                     </div>
 
                     <div className='img_container relative'>
                         <img src={pycharm_dark} alt="IDEA" />
-                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">PyCharm</div>
+                        <div className="2xl:text-xl xl:text-lg lg:text-base md:text-xs box font-extrabold text-blue-700">PyCharm</div>
                     </div>
 
                     <div className='img_container relative'>
                         <img src={python} alt="programming language" />
-                        <div className="2xl:text-2xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">Python</div>
+                        <div className="2xl:text-2xl xl:text-lg lg:text-base md:text-xs box font-extrabold text-blue-700">Python</div>
                     </div>
 
                     <div className='img_container relative'>
                         <img src={react_img} alt="framework" />
-                        <div className="2xl:text-2xl xl:text-lg lg:text-base md:text-xs text-[5px] box font-extrabold text-blue-700">Reactjs</div>
+                        <div className="2xl:text-2xl xl:text-lg lg:text-base md:text-xs box font-extrabold text-blue-700">Reactjs</div>
                     </div>
                 </div>
             </div>
