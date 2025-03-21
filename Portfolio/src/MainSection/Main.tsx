@@ -5,7 +5,7 @@ import SkillAndToolsSection from './Skill&ToolSection/Skill&Tool.tsx'
 function Main()
 {
     return(
-    <div className='2xl:px-30 p-10 w-full overflow-hidden bg-[#007EA7]'>
+    <div className='2xl:px-30 p-10 w-full space-y-10 overflow-hidden bg-[#007EA7]'>
         <AboutSection/>
         <SkillAndToolsSection/>
     </div>

@@ -5,7 +5,7 @@ import CreateInfo from './CreatorInfo.tsx'
 function AboutSection()
 {
     return(
-    <div id='About' className='2xl:h-[100vh] md:h-[90vh] lg:flex lg:justify-center lg:items-center  lg:flex-row lg:justify-evenly space-y-10'>
+    <div id='About' className='2xl:h-[100vh] md:h-[90vh lg:flex lg:justify-center lg:items-center  lg:flex-row lg:justify-evenly space-y-10'>
         <Profile/>
         <CreateInfo/>
     </div>)

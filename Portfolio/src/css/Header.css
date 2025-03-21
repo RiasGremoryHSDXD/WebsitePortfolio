@@ -17,7 +17,7 @@
     }
     
     .li-design {
-        @apply [font-size:_clamp(4px,2vw,4rem)];
+        @apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base text-[15px]
     }
 }
 

@@ -14,7 +14,7 @@ function SkillAndTools(){
     return(
         <div id="Skill&Tools" className="flex justify-center font-[Inclusive_Sans]">
             <div className='flex flex-col justify-center items-center space-y-7 '>
-                <p className='2xl:text-5xl xl:text-4xl lg:text-2xl md:lg font-defaultFont'>Skill&Tools</p>
+                <p className='2xl:text-5xl xl:text-4xl lg:text-2xl md:text-xl font-defaultFont'>Skill&Tools</p>
                 <div className='skill_and_tools_img'>
                     <div className='img_container relative'>
                         <img src={idea_dark} alt="IDEA"/>

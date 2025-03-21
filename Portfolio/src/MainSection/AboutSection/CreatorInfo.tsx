@@ -12,7 +12,7 @@ function CreateInfo()
         title_user_info: (
             <>
               <h2 className="text-design typing-container">
-                Hi, I am James Christopher C. Tagupa
+                Hi, I am James Christopher Tagupa
               </h2>
               <h4 className="text-design">
                 Aspiring Full Stack Programmer
@@ -71,10 +71,10 @@ function CreateInfo()
         </p>
 
         <div className='flex justify-between'>
-            <button className={`flex justify-start button-design border-2 w-[10%] border-red-600 ${count === 0 ? "invisible" : "visible"}`} onClick={minus_count}>
+            <button className={`flex justify-start button-design border-2 sm:w-[10%] w-[20%] border-red-600 ${count === 0 ? "invisible" : "visible"}`} onClick={minus_count}>
                 <img className='w-[100%]' src={left_arrow} alt="left_arrow_btn" />
             </button>
-            <button className={`flex justify-end button-design border-2 w-[10%] border-red-600 ${count === 2 ? "invisible" : "visible"}`} onClick={add_count}>
+            <button className={`flex justify-end button-design border-2 sm:w-[10%] w-[20%] border-red-600 ${count === 2 ? "invisible" : "visible"}`} onClick={add_count}>
                 <img className='w-[100%]' src={right_arrow} alt="right_arrow_btn" />
             </button>
         </div>
