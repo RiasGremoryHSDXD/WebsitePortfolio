@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+    --color-defaultColor: #FFFFFF;
+    --font-defaultFont: Inclusive Sans;
+}
+
+@layer components{
+
+    .contact-container{
+        @apply flex justify-center flex-col font-defaultFont 
+    }
+
+    .contact-info{
+        @apply  flex flex-col gap-5 mt-3
+    }
+
+    .contact-info > div{
+        @apply flex items-center gap-2
+    }
+
+    .contact-info > div > div:nth-child(1){
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out; /* Explicitly define duration and property */
+    }
+
+    .contact-info > div > div:nth-child(1):hover{
+        transform: translateY(-11px);
+    }
+
+    .appointment-container{
+        @apply flex justify-center items-center flex-col p-5 rounded-lg bg-black text-defaultColor font-defaultFont
+        gap-5
+    }
+
+    .appointment-container form p{
+        @apply text-defaultColor text-xs
+    }
+
+    .appointment-container form input[type="text"]{
+        @apply py-1.5 px-[5px] bg-[#737070] mb-3 w-[100%]
+    }
+
+    .appointment-container form textarea{
+        @apply bg-[#737070] w-[100%]
+    }
+}
