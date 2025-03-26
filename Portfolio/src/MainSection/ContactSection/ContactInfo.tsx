@@ -6,7 +6,6 @@ import { faEnvelope, faPhone, faLocationDot } from "@fortawesome/free-solid-svg-
 function ContactInfo(){
     return(
             <div id="Contact" className='contact-container'>
-                <p className='flex justify-center text-2xl'>Contact</p>
                 <div className="contact-info">
                     <p className='font-extrabold'>Get in Touch</p>
 
