@@ -5,9 +5,9 @@ body{
     margin: 0;
 }
 
-@theme{
+:root {
     --color-defaultColor: #FFFFFF;
-    --font-defaultFont: Inclusive Sans;
+    --font-defaultFont: 'Inclusive Sans', sans-serif;
 }
 
 @layer base{
