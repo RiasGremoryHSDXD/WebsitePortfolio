@@ -25,7 +25,7 @@ function ProjectSection(){
     }
 
     return(
-        <div id='Project' className="flex justify-center items-center flex-col p-2 space-y-10 w-[100%]">
+        <div id='Project' className="2xl:h-[100vh] flex justify-center items-center flex-col p-2 space-y-10 w-[100%]">
             <p className='lg:text-5xl md:text-4xl sm:text-3xl font-[Inclusive Sans] text-2xl'>Project</p>
             {/* <div className="w-16 h-16 bg-blue-500  animate-spin"></div> */}
 

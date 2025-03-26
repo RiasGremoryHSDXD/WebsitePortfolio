@@ -12,7 +12,7 @@ import react_img from './../../assets/React-Dark.png'
 
 function SkillAndTools(){
     return(
-        <div id="Skill&Tools" className="flex justify-center font-[Inclusive_Sans]">
+        <div id="Skill&Tools" className="2xl:h-[100vh] flex justify-center font-[Inclusive_Sans]">
             <div className='flex flex-col justify-center items-center space-y-7 '>
                 <p className='2xl:text-5xl xl:text-4xl lg:text-2xl md:text-xl font-defaultFont'>Skill&Tools</p>
                 <div className='skill_and_tools_img'>
