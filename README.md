@@ -15,7 +15,6 @@ A modern, responsive web portfolio with a comments system powered by Supabase. S
 - **Skills Section**: Display technical expertise with interactive badges
 - **Comments System**: Real-time comments powered by Supabase
 - **Contact Form**: Easy way for visitors to reach out
-- **Dark/Light Mode**: Built-in theme toggle (if implemented)
 
 ## Technologies Used
 
@@ -24,7 +23,7 @@ A modern, responsive web portfolio with a comments system powered by Supabase. S
 - **Database**: Supabase (PostgreSQL)
 - **State Management**: React Hooks
 - **Form Handling**: React Hook Form
-- **Animation**: Framer Motion (if used)
+- **Animation**: Framer Motion
 
 
 # Chatbot Interaction Guide 🤖
