@@ -1,0 +1,20 @@
+.react-chatbot-kit-chat-container {
+    height: 480px;
+}
+
+.react-chatbot-kit-chat-inner-container {
+    height: 480px;
+    border-radius: 7px 0px 7px 7px;
+}
+
+.react-chatbot-kit-chat-input-container{
+    bottom: 0;
+    background-color: white;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.react-chatbot-kit-chat-bot-message-container{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
