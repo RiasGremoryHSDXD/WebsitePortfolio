@@ -23,7 +23,7 @@ function ChatBot() {
     return (
 
         <div className='fixed bottom-4 right-4 w-fit h-fit  flex flex-col items-end'>
-            <button className={`${display_bot ? '' : 'hidden'} bg-[#EFEFEF] w-fit h-fit p-[2px_10px_2px_10px] rounded-[5px_5px_0px_0px] cursor-pointer top`}  onClick={close_chat}>
+            <button className={`${display_bot ? '' : 'hidden'} bg-blue-600 w-fit h-fit p-[2px_10px_2px_10px] rounded-[5px_5px_0px_0px] cursor-pointer top`}  onClick={close_chat}>
                 <FontAwesomeIcon icon={faXmark} size='lg'/>
             </button>
             <div className={`${display_bot ? '' : 'hidden'} `}>

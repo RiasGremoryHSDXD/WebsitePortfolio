@@ -30,7 +30,7 @@ class ActionProvider {
     );
 
     chatBotIdentity = () => this.appendMessage(
-        `I'm your friendly guide to exploring ${ProfileData.About.full_name}'s profile! ` +
+        `I'm a chatbot named Rias friendly guide to exploring ${ProfileData.About.full_name}'s profile! ` +
         `Think of me as a digital portfolio assistant. I can share details about his education, skills, projects, ` +
         `and more! 📚💻 Ask me anything you're curious about!`
     );
@@ -127,7 +127,7 @@ class ActionProvider {
         `Contact information,\n\n` +
         `What would you like to explore? 😊` )
         this.appendMessage(
-            "Tips to used me! https://github.com/RiasGremoryHSDXD/WebsitePortfolio"
+            "Tips to used me go to this URL for the guide 💘! https://github.com/RiasGremoryHSDXD/WebsitePortfolio"
         )
     };
 

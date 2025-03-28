@@ -1,5 +1,7 @@
 .react-chatbot-kit-chat-container {
     height: 480px;
+    min-width: 290px;
+    width: 30vw;
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -17,4 +19,8 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: pre-line;
+}
+
+.react-chatbot-kit-chat-bot-message {
+    margin-left: 15px;
 }
