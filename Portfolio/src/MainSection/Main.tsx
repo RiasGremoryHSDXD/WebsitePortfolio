@@ -3,6 +3,7 @@ import AboutSection from './AboutSection/AboutSection.tsx'
 import SkillAndToolsSection from './Skill&ToolSection/Skill&Tool.tsx'
 import ProjectSection from './ProjectSection/ProjectSection.tsx'
 import Contact from './ContactSection/Contact.tsx'
+import CommentSection from '../CommentSection.tsx'
 
 function Main()
 {
@@ -11,6 +12,7 @@ function Main()
         <AboutSection/>
         <SkillAndToolsSection/>
         <ProjectSection/>
+        <CommentSection/>
         <Contact/>
     </div>
     )

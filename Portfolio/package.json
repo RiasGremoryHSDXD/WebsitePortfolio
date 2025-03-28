@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.3",
     "@tailwindcss/vite": "^4.0.12",
     "react": "^19.0.0",
     "react-chatbot-kit": "^2.2.2",
