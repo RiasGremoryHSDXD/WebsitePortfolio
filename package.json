@@ -3,23 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
+    "generate:diagrams": "npx mmdc -i diagrams/portfolio.mmd -o public/images/diagrams/portfolio.svg && npx mmdc -i diagrams/serbisure.mmd -o public/images/diagrams/serbisure.svg && npx mmdc -i diagrams/vibeo.mmd -o public/images/diagrams/vibeo.svg && npx mmdc -i diagrams/ai-chat-manager.mmd -o public/images/diagrams/ai-chat-manager.svg",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
+    "firebase": "^12.19.0",
+    "framer-motion": "^13.4.0",
     "next": "16.3.5",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "react-hook-form": "^7.88.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.17.0",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.43",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "puppeteer": "^25.11.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

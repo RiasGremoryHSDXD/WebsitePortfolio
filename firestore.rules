@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /comments/{commentId} {
+      // Anyone can read comments
+      allow read: if true;
+      
+      // Anyone can create a comment if it has a name and content
+      allow create: if request.resource.data.keys().hasAll(['name', 'content', 'createdAt'])
+                    && request.resource.data.name is string
+                    && request.resource.data.content is string;
+      
+      // No one can update or delete comments
+      allow update, delete: if false;
+    }
+  }
+}
