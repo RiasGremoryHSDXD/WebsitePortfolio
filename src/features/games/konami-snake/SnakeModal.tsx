@@ -29,14 +29,18 @@ export default function SnakeModal({ isOpen, onClose }: SnakeModalProps) {
 
   // Prevent background scrolling while modal is open
   useEffect(() => {
+    let timer: NodeJS.Timeout | undefined;
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       reset();
-      setGameState('idle');
+      timer = setTimeout(() => {
+        setGameState('idle');
+      }, 0);
     } else {
       document.body.style.overflow = 'unset';
     }
     return () => {
+      if (timer) clearTimeout(timer);
       document.body.style.overflow = 'unset';
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -44,7 +48,10 @@ export default function SnakeModal({ isOpen, onClose }: SnakeModalProps) {
 
   useEffect(() => {
     if (gameState === 'gameover' && score > highScore) {
-      setHighScore(score);
+      const timer = setTimeout(() => {
+        setHighScore(score);
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [gameState, score, highScore]);
 

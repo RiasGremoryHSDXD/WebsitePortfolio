@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 const KONAMI_CODE = [
   'ArrowUp',
@@ -14,20 +14,16 @@ const KONAMI_CODE = [
 ];
 
 export function useKonamiCode(onSuccess: () => void) {
-  const [keys, setKeys] = useState<string[]>([]);
+  const keysRef = useRef<string[]>([]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      setKeys((currentKeys) => {
-        const newKeys = [...currentKeys, e.key].slice(-KONAMI_CODE.length);
-        
-        if (newKeys.join(',') === KONAMI_CODE.join(',')) {
-          onSuccess();
-          return []; // Reset after success
-        }
-        
-        return newKeys;
-      });
+      keysRef.current = [...keysRef.current, e.key].slice(-KONAMI_CODE.length);
+      
+      if (keysRef.current.join(',') === KONAMI_CODE.join(',')) {
+        keysRef.current = [];
+        onSuccess();
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);
