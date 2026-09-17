@@ -157,7 +157,10 @@ export function DinoRunner() {
   // Sync high score
   useEffect(() => {
     if (gameState === 'gameover' && score > highScore) {
-      setHighScore(score);
+      const timer = setTimeout(() => {
+        setHighScore(score);
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [gameState, score, highScore]);
 

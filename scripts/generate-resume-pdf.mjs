@@ -18,7 +18,7 @@ import path from 'path';
         await page.goto(url, { waitUntil: 'networkidle0', timeout: 15000 });
         success = true;
         break;
-      } catch (e) {
+      } catch {
         console.log(`Attempt ${attempt} failed, retrying in 1s...`);
         await new Promise((r) => setTimeout(r, 1000));
       }
