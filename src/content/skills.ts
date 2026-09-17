@@ -3,7 +3,7 @@ import { Skill } from './types';
 export const skills: Skill[] = [
   // STRONG EVIDENCE
   { name: 'TypeScript', tier: 'strong', category: 'language',
-    evidenceRepos: [{ label: 'ai-chat-manager', url: 'https://github.com/RiasGremoryHSDXD/ai-chat-manager' }] },
+    evidenceRepos: [{ label: 'SerbiSure-Frontend', url: 'https://github.com/RiasGremoryHSDXD/SerbiSure-Frontend' }] },
   { name: 'JavaScript', tier: 'strong', category: 'language',
     evidenceRepos: [{ label: 'Vibeo', url: 'https://github.com/RiasGremoryHSDXD/Vibeo' }] },
   { name: 'React', tier: 'strong', category: 'frontend',
@@ -15,7 +15,7 @@ export const skills: Skill[] = [
   { name: 'CSS', tier: 'strong', category: 'frontend',
     evidenceRepos: [{ label: 'WebsitePortfolio', url: 'https://github.com/RiasGremoryHSDXD/WebsitePortfolio' }] },
   { name: 'Tailwind CSS', tier: 'strong', category: 'frontend',
-    evidenceRepos: [{ label: 'WebsitePortfolio', url: 'https://github.com/RiasGremoryHSDXD/WebsitePortfolio' }] },
+    evidenceRepos: [{ label: 'StudentForecasting-Frontend', url: 'https://github.com/RiasGremoryHSDXD/StudentForecasting-Frontend' }] },
   { name: 'Python', tier: 'strong', category: 'backend',
     evidenceRepos: [{ label: 'Serbisure-backend', url: 'https://github.com/RiasGremoryHSDXD/Serbisure-backend' }] },
   { name: 'Express.js', tier: 'strong', category: 'backend',

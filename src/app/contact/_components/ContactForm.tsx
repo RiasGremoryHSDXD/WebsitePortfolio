@@ -15,7 +15,7 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 
 export function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'sent'>('idle');
-  const { register, handleSubmit, formState: { errors } } = useForm<ContactFormValues>({
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
   });
 
@@ -45,7 +45,32 @@ export function ContactForm() {
           {errors.email && <p className="text-red-400 text-xs mt-1 font-mono">{errors.email.message}</p>}
         </div>
         <div>
-          <label htmlFor="message" className="block font-mono text-xs text-foreground-muted mb-2 uppercase tracking-widest">Message</label>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-2 gap-2">
+            <label htmlFor="message" className="block font-mono text-xs text-foreground-muted uppercase tracking-widest">Message</label>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setValue('message', "Hi James, I wanted to reach out regarding a potential freelance project.", { shouldValidate: true })}
+                className="text-[10px] px-2 py-1 rounded-full border border-border bg-surface-2 text-foreground-muted hover:text-primary hover:border-primary transition-colors"
+              >
+                Project Inquiry
+              </button>
+              <button
+                type="button"
+                onClick={() => setValue('message', "Hi James, are you currently available for an internship opportunity at our company?", { shouldValidate: true })}
+                className="text-[10px] px-2 py-1 rounded-full border border-border bg-surface-2 text-foreground-muted hover:text-primary hover:border-primary transition-colors"
+              >
+                Internship
+              </button>
+              <button
+                type="button"
+                onClick={() => setValue('message', "Hey James, I just wanted to say I love your portfolio!", { shouldValidate: true })}
+                className="text-[10px] px-2 py-1 rounded-full border border-border bg-surface-2 text-foreground-muted hover:text-primary hover:border-primary transition-colors"
+              >
+                Say Hi
+              </button>
+            </div>
+          </div>
           <textarea {...register('message')} id="message" rows={5} className={`${inputClass(!!errors.message)} resize-none`} placeholder="Tell me about your project..." />
           {errors.message && <p className="text-red-400 text-xs mt-1 font-mono">{errors.message.message}</p>}
         </div>

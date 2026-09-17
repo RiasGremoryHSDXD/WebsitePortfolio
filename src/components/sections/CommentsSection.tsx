@@ -31,6 +31,16 @@ export function CommentsSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !content.trim()) return;
+    
+    if (name.length > 60) {
+      setError('Name must be less than 60 characters.');
+      return;
+    }
+    
+    if (content.length > 500) {
+      setError('Comment must be less than 500 characters.');
+      return;
+    }
 
     setIsSubmitting(true);
     setError('');
@@ -99,9 +109,34 @@ export function CommentsSection() {
               />
             </div>
             <div>
-              <label htmlFor="content" className="block text-xs font-semibold text-foreground-muted uppercase tracking-wider mb-2">
-                Comment
-              </label>
+              <div className="flex justify-between items-end mb-2">
+                <label htmlFor="content" className="block text-xs font-semibold text-foreground-muted uppercase tracking-wider">
+                  Comment
+                </label>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setContent("Just saying hi! 👋 Great portfolio.")}
+                    className="text-[10px] px-2 py-1 rounded-full border border-border bg-surface-2 text-foreground-muted hover:text-primary hover:border-primary transition-colors"
+                  >
+                    Say Hi
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setContent("Hi James, are you available for freelance or internship opportunities?")}
+                    className="text-[10px] px-2 py-1 rounded-full border border-border bg-surface-2 text-foreground-muted hover:text-primary hover:border-primary transition-colors"
+                  >
+                    Job Inquiry
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setContent("I have a quick question about one of your projects: ")}
+                    className="text-[10px] px-2 py-1 rounded-full border border-border bg-surface-2 text-foreground-muted hover:text-primary hover:border-primary transition-colors"
+                  >
+                    Question
+                  </button>
+                </div>
+              </div>
               <textarea
                 id="content"
                 value={content}

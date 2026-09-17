@@ -19,6 +19,7 @@ export function LinkedInSection() {
             height="800" 
             style={{ border: 'none', background: 'transparent' }} 
             title="LinkedIn Feed"
+            loading="lazy"
           />
         </div>
       </div>
