@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://james-portfolio.vercel.app'; // Update this with your actual domain
+  const baseUrl = 'https://www.jameschristopher.online';
 
   const projectUrls = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,

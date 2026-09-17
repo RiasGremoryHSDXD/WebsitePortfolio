@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://james-portfolio.vercel.app/sitemap.xml',
+    sitemap: 'https://www.jameschristopher.online/sitemap.xml',
   };
 }
