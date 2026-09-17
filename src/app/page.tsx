@@ -8,6 +8,7 @@ import { FeaturedProject } from './_components/home/FeaturedProject';
 import { ProjectGrid } from './_components/home/ProjectGrid';
 import { AcademicProjects } from './_components/home/AcademicProjects';
 import { AboutSection } from './_components/home/AboutSection';
+import { PlaygroundSection } from './_components/home/PlaygroundSection';
 
 export default function Home() {
   return (
@@ -49,6 +50,11 @@ export default function Home() {
 
       {/* ===== ABOUT ===== */}
       <AboutSection />
+
+      <div className="divider max-w-6xl mx-auto" />
+
+      {/* ===== PLAYGROUND / GAMES ===== */}
+      <PlaygroundSection />
 
       <div className="divider max-w-6xl mx-auto" />
 

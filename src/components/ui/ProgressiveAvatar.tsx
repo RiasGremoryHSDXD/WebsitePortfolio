@@ -31,21 +31,11 @@ export function ProgressiveAvatar({
       if (isMounted) setMinDelayPassed(true);
     }, minDisplayMs);
 
-    // 2. Preload the high-definition PNG in the background
-    const img = new window.Image();
-    img.src = pngSrc;
-    img.onload = () => {
-      if (isMounted) setHighResLoaded(true);
-    };
-    img.onerror = () => {
-      console.warn('HD image failed to load, falling back to WebP:', pngSrc);
-    };
-
     return () => {
       isMounted = false;
       clearTimeout(timer);
     };
-  }, [pngSrc, minDisplayMs]);
+  }, [minDisplayMs]);
 
   // Determine active state
   const isHdActive =
@@ -64,16 +54,19 @@ export function ProgressiveAvatar({
         className="w-full h-full object-cover"
       />
 
-      {/* 2. High Definition PNG image (fades in once downloaded) */}
-      <Image
-        src={pngSrc}
-        alt={`${alt} (High Definition)`}
-        width={858}
-        height={738}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-          isHdActive ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-      />
+      {/* 2. High Definition PNG image (deferred load) */}
+      {(minDelayPassed || manualView === 'png') && (
+        <Image
+          src={pngSrc}
+          alt={`${alt} (High Definition)`}
+          width={858}
+          height={738}
+          onLoad={() => setHighResLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+            isHdActive ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+        />
+      )}
 
       {/* 3. Sleek Quality Switch Badge */}
       {showBadge && (
