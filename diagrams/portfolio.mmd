@@ -1,0 +1,14 @@
+graph TD
+    A[Client UI - Next.js/React] --> B[Static Export HTML/JS/CSS]
+    B --> C[Vercel Edge CDN]
+    C --> D[User Browser]
+    
+    E[Content/Data Layer .ts files] --> F[Next.js Build Process]
+    F --> B
+    
+    style A fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style B fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style C fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style D fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style E fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style F fill:#0a0a0a,stroke:#38bdf8,color:#ededed

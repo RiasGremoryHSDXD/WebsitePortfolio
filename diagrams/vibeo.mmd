@@ -1,0 +1,10 @@
+graph TD
+    A[JavaScript Client UI] -->|Fetch| B[Node Backend]
+    B -->|Stream| C[Video CDN]
+    B -->|Inference Request| D[ML Service Python]
+    D -->|Recommendations| B
+    
+    style A fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style B fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style C fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style D fill:#0a0a0a,stroke:#38bdf8,color:#ededed

@@ -1,0 +1,9 @@
+graph TD
+    A[React Client UI] -->|HTTP/REST| B[Python Backend]
+    B -->|Query| C[Database]
+    B -->|Auth| D[Supabase Auth]
+    
+    style A fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style B fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style C fill:#0a0a0a,stroke:#38bdf8,color:#ededed
+    style D fill:#0a0a0a,stroke:#38bdf8,color:#ededed
