@@ -50,6 +50,9 @@ export function Header() {
           <Link href="/projects" className="nav-link">
             Archive
           </Link>
+          <Link href="/lab" className="nav-link text-accent">
+            Lab
+          </Link>
           <Link href="/contact" className="nav-link">
             Contact
           </Link>
@@ -122,6 +125,13 @@ export function Header() {
             className="block py-2 text-sm text-foreground hover:text-primary"
           >
             All Projects Archive
+          </Link>
+          <Link
+            href="/lab"
+            onClick={handleNavClick}
+            className="block py-2 text-sm text-accent hover:text-accent/80"
+          >
+            Developer Lab
           </Link>
           <Link
             href="/contact"

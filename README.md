@@ -21,6 +21,7 @@ This portfolio showcases software engineering projects, full-stack builds, and a
 - **Real-time Guestbook**: Integrated with Firestore using a test-mode security rule structure to allow public reads and writes without authentication.
 - **Optimized Images**: Utilizes `next/image` for automatic image optimization and lazy loading.
 - **Semantic Theme Tokens**: Standardized Tailwind theme tokens (`bg-background`, `text-primary`, etc.) for consistent styling.
+- **Developer Playground & Easter Eggs**: Features a custom-built 60fps canvas game engine (`requestAnimationFrame`) implementing a Konami Code Snake game, a WPM Developer Typing Lab (`/lab`), and an offline-style 404 Dino Runner.
 
 ## Getting Started
 
@@ -38,5 +39,6 @@ This portfolio showcases software engineering projects, full-stack builds, and a
 
 - `src/app`: Next.js App Router pages and layouts.
 - `src/components`: Reusable UI components and page sections.
+- `src/features/games`: Custom game loop architectures and game implementations (Snake, Typing Lab, Dino Runner).
 - `src/content`: TypeScript data files acting as the "database" for portfolio content (`projects.ts`, `personal.ts`, etc.).
 - `src/lib`: Utilities and Firebase client logic.
